@@ -1,9 +1,14 @@
 export default function PostDetail({ post, onClose }) {
   return (
-    <div style={{ border: '1px solid black', padding: 10, marginTop: 20 }}>
-      <h2>{post.title}</h2>
-      <p>{post.content}</p>
-      <button onClick={onClose}>Close</button>
+    <div>
+      <h2 className="text-2xl font-bold text-blue-800 mb-2">{post.title}</h2>
+      <p className="text-gray-700 mb-4">{post.content}</p>
+      <button
+        onClick={onClose}
+        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+      >
+        Close
+      </button>
     </div>
   );
 }

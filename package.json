@@ -11,6 +11,8 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
     "jest": "^30.0.4",
     "jest-environment-jsdom": "^30.0.4",
     "next": "15.3.5",
